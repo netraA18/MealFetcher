@@ -11,7 +11,6 @@ public class Main {
     public static void main(String[] args) {
         try {
             Scanner scanner = new Scanner(System.in);
-
             System.out.print("Enter a dish: ");
             String dish = scanner.nextLine();
             String mealResponse = MealAPIUtil.getMealByName(dish);
@@ -41,15 +40,16 @@ public class Main {
                         String mealName = (String) meal.get("strMeal");
                         String mealCategory = (String) meal.get("strCategory");
                         String mealInstructions = (String) meal.get("strInstructions");
+                        String youTube = (String) meal.get("strYoutube");
 
                         String[] sentences = mealInstructions.split("\\.");
 
-                        System.out.println("Meal Name:\t\t " + mealName);
-                        System.out.println();
-                        System.out.println("Category:\t\t " + mealCategory);
-                        System.out.println();
-                        System.out.println("Instructions:");
-                        System.out.println();
+                        System.out.println("Meal Name:\t\t " + mealName + "\n");
+                        System.out.println("Category:\t\t " + mealCategory+ "\n");
+                        System.out.println("Youtube:\t\t " + youTube + "\n");
+                        System.out.println("Instructions:"+ "\n");
+                        
+                        
 
                         for (int j = 1; j < sentences.length; j++) {
                             System.out.println(j + ") " + sentences[j].trim());
@@ -66,6 +66,8 @@ public class Main {
                             }
                         }
                         System.out.println();
+
+                        
                         
 
                     } else {
