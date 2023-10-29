@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/Users/netra/Downloads/json-simple-1.1.1.jar"
+        "/Users/netra/Downloads/json-simple-1.1.1.jar",
+        "demo/**/*.jar"
     ]
 }

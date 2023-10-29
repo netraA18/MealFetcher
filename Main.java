@@ -68,9 +68,8 @@ public class Main {
         for (int m = 1; m <= 20; m++) {
             String mealMeasurements = (String) meal.get("strMeasure" + m);
             String mealIngredients = (String) meal.get("strIngredient" + m);
-            if (mealMeasurements != null && !mealMeasurements.trim().isEmpty()
-                    && mealIngredients != null && !mealIngredients.trim().isEmpty()) {
-                System.out.println(" ~ " + mealMeasurements + " of " + mealIngredients);
+            if (mealMeasurements != null && !mealMeasurements.trim().isEmpty() && mealIngredients != null && !mealIngredients.trim().isEmpty()) {
+                System.out.println(" ~ " + mealMeasurements + " - " + mealIngredients);
             }
         }
         System.out.println();
