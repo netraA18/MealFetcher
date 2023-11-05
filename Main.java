@@ -25,7 +25,7 @@ public class Main {
         }
     }
 
-    private static void processMealResponse(String mealResponse, String dish) {
+    public static void processMealResponse(String mealResponse, String dish) {
         JSONParser parser = new JSONParser();
         JSONObject mealObject;
         JSONArray mealsArray;
@@ -46,7 +46,7 @@ public class Main {
         }
     }
 
-    private static void printMealDetails(JSONObject meal) {
+    public static void printMealDetails(JSONObject meal) {
         String mealName = (String) meal.get("strMeal");
         String mealCategory = (String) meal.get("strCategory");
         String mealInstructions = (String) meal.get("strInstructions");

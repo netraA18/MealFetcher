@@ -5,6 +5,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.stream.Collectors;
 
+
+
 public class MealAPIUtil {
     private static final String API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
