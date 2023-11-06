@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Recipe for Everyone</title>
 </head>
 <body>
-   
     <h1>Recipe for Everyone</h1>
     <nav class="myNav">
         <ul>
-            
             <li><a href="home.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="searchRecipes.html">Search Recipes</a></li>
@@ -19,15 +17,12 @@
         </ul>
     </nav>
 
-    <form method="get" action="/api/recipes">
+    <form method="get" action="/search-recipe"> <!-- Make sure action points to the right endpoint -->
         <label for="recipeName">Enter Dish Name:</label>
         <input type="text" id="recipeName" name="recipeName">
         <input type="submit" value="Search">
     </form>
 
-    
     <script src="mealJS.js"></script>
 </body>
-
-
 </html>

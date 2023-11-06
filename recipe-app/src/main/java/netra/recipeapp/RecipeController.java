@@ -20,5 +20,8 @@ public class RecipeController {
         String mealDetails = mealService.getMealByName(recipeName);
         return mealDetails;
     }
+
+   
+
 }
 
