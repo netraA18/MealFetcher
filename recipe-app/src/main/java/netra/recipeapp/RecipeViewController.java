@@ -1,5 +1,6 @@
 package netra.recipeapp;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Controller;
@@ -11,21 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 
 
-// @Controller
-// public class RecipeViewController {
-
-//     @GetMapping("/home")
-//     public String showRecipeForm() {
-//         return "home";
-//     }
-
-//     @GetMapping("/recipe-details")
-//     public String showRecipeDetails(@RequestParam("recipeName") String recipeName) {
-//         // You can pass the recipeName to your backend service here
-//         // For now, let's just pass it as a parameter to the view
-//         return "recipe-details";
-//     }
-// }
 
 
 
@@ -35,8 +21,33 @@ public class RecipeViewController {
     private MealService mealService; 
 
     @GetMapping("/home")
-    public String showRecipeForm() {
+    public String homePage() {
         return "home";
+    }
+
+     @GetMapping("/home.html")
+    public String homeHTMLPage() {
+        return "home";
+    }
+
+    @GetMapping("/gallery")
+    public String galleryPage() {
+        return "gallery";
+    }
+
+     @GetMapping("/gallery.html")
+    public String galleryHTMLPage() {
+        return "gallery";
+    }
+
+    @GetMapping("/about")
+    public String aboutPage() {
+        return "about";
+    }
+
+     @GetMapping("/about.html")
+    public String aboutHTMLPage() {
+        return "about";
     }
 
     @GetMapping("/recipe-details")
